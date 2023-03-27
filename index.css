@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #eb2e2e;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Gruppo', cursive;
+}
+
+h1, input {
+    margin-bottom: 1rem;
+}
+
+h1, p, input {
+    color: #0c9e8b;
+}
+
+p, input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin-bottom: .5rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#campoSenha, #quantSenha,  input[type=button]{
+    border: 1px solid #0c9e8b;
+    background: none;
+    border-radius: 5px;
+}
+
+#campoSenha, #quantSenha {
+    padding: 0px 0px 0px 5px;
+}
+
+
+#campoSenha:focus, #quantSenha:focus {
+    outline: 0;
+    box-shadow: 0px 0px 6px #0c9e8b;
+}
+
+#campoSenha {
+    background: none;
+    min-width: 250px;
+    height: 30px;
+    transform: translateY(50px);
+}
+
+#campoSenha:focus {
+    box-shadow: 0px 0px 6px #0c9e8b;
+}
+
+#quantSenha {
+    height: 30px;
+    width: 70px;
+}
+
+input[type=button] {
+    width: 100px;
+    height: 35px;
+    background: none;
+    transition: 400ms;
+}
+
+input[type=button]:hover {
+    transition: 400ms;
+    background-color: #0c9e8b;
+    color: black;
+}
