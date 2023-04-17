@@ -16,7 +16,7 @@ function gerarSenha() {
     const caracterEspecial = ['!', '#', '$', '%', '&', '@'];
 
 
-    let quantSenha = document.getElementById("quantSenha").value
+    let quantSenha = document.getElementById("caracter").value
     let conta
 
     if (quantSenha >= 0) {
@@ -50,14 +50,15 @@ function gerarSenha() {
 
 function html() {
     document.body.innerHTML = `
-        <div>
+        <div class="caixa">
             <h1>Gerador de senha</h1>
             <list>
-                <p>Quantidades de casas</p>
-                <input type="text" id="quantSenha"></input>
+                <div class="caixa-caracter">
+                    <p>Caracters: </p>
+                    <input type="text" id="caracter"></input>
+                </div>
+                <input type="text" id="campoSenha" style="display:flex;">
                 <input type="button" value="Enviar" onClick="gerarSenha()">
-                <input type="text" id="campoSenha" style="display:none;">
-                <textarea id="campoSenha" style="display:none;"></textarea>
             </list>
         </div>
     `
