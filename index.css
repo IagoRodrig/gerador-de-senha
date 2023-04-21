@@ -37,6 +37,7 @@ list {
     justify-content: center;
 
     height: 25vh;
+    width: calc(100% - 20vw);
 
     border: 1px solid #0c9e8b;
     border-radius: 5px;
@@ -105,4 +106,13 @@ input[type=button]:hover {
     transition: 400ms;
     background-color: #0c9e8b;
     color: black;
+}
+
+@media (min-width: 425px) {
+    
+    list {
+        border-radius: 10px;
+        width: 350px;
+    }
+
 }
